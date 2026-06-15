@@ -142,27 +142,6 @@ export default function Services() {
               </p>
             </div>
 
-            <a
-              href="#booking"
-              className="
-                inline-flex
-                items-center
-                justify-center
-                rounded-2xl
-                bg-blue-600
-                px-7
-                py-4
-                font-semibold
-                text-white
-                transition-all
-                duration-300
-                hover:-translate-y-1
-                hover:bg-blue-700
-                hover:shadow-xl
-              "
-            >
-              Book A Free Strategy Call →
-            </a>
           </div>
         </div>
       </div>
