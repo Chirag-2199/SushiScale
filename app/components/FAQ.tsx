@@ -6,7 +6,32 @@ const faqs = [
   {
     question: "How much ad spend do I need?",
     answer:
-      "We recommend a minimum of $500/month in ad spend per client to generate meaningful data and consistent lead flow. This is separate from our management fee. Most businesses start between $500–$1,500/month and increase spend once campaigns are producing profitable results.",
+      "We recommend a minimum of $500/month in ad spend to generate meaningful data and consistent lead flow. This is separate from our management fee.",
+  },
+  {
+    question: "Do I need a website?",
+    answer:
+      "No. We can build a funnel or landing page for you if needed.",
+  },
+  {
+    question: "How long before I see results?",
+    answer:
+      "Most campaigns begin generating data within the first few days. Optimization and scaling happen as data comes in.",
+  },
+  {
+    question: "Do you only manage Facebook Ads?",
+    answer:
+      "No. We also help with funnels, landing pages, lead tracking, GoHighLevel setup, CRM systems, automation, and follow-up.",
+  },
+  {
+    question: "Do you guarantee results?",
+    answer:
+      "No agency can guarantee results. We focus on proven systems, testing, optimization, and continuous improvement.",
+  },
+  {
+    question: "How do we get started?",
+    answer:
+      "Simply complete the qualification form and schedule a strategy call. We'll walk you through the next steps.",
   },
 ];
 
@@ -37,12 +62,19 @@ export default function FAQ() {
         </div>
 
         {/* FAQ Card */}
-        <div className="rounded-[32px] border border-slate-200 bg-white/80 shadow-xl backdrop-blur-xl overflow-hidden">
+        <div className="overflow-hidden rounded-[32px] border border-slate-200 bg-white/80 shadow-xl backdrop-blur-xl">
           {faqs.map((faq, index) => {
             const isOpen = open === index;
 
             return (
-              <div key={faq.question}>
+              <div
+                key={faq.question}
+                className={
+                  index !== faqs.length - 1
+                    ? "border-b border-slate-100"
+                    : ""
+                }
+              >
                 <button
                   onClick={() =>
                     setOpen(isOpen ? null : index)
@@ -80,7 +112,7 @@ export default function FAQ() {
                     }`}
                 >
                   <div className="overflow-hidden">
-                    <div className="border-t border-slate-100 px-8 py-6">
+                    <div className="px-8 pb-7">
                       <p className="leading-8 text-slate-600">
                         {faq.answer}
                       </p>
@@ -90,20 +122,6 @@ export default function FAQ() {
               </div>
             );
           })}
-        </div>
-
-        {/* Bottom CTA */}
-        <div className="mt-10 text-center">
-          <p className="mb-5 text-slate-600">
-            Still have questions?
-          </p>
-
-          <a
-            href="#booking"
-            className="inline-flex items-center justify-center rounded-2xl bg-blue-600 px-6 py-3 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-blue-700 hover:shadow-xl"
-          >
-            Book A Free Strategy Call
-          </a>
         </div>
       </div>
     </section>
