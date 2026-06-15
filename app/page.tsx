@@ -13,10 +13,10 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
-      <Services />
-      <Problem />
-      <Results />
       <Booking />
+      <Services />
+      {/* <Problem /> */}
+      <Results />
       <FAQ />
       <Footer />
       <StickyMobileCTA />
