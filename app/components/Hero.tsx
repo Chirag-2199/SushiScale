@@ -37,7 +37,7 @@ export default function Hero() {
         {/* Badge */}
         <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-blue-700">
           <span className="h-2 w-2 rounded-full bg-blue-600" />
-          For Agency Owners
+          Attention  Agency Owners
         </div>
 
         {/* Headline */}
@@ -52,7 +52,7 @@ export default function Hero() {
         </h1>
 
         {/* Offer */}
-        <p className="mt-8 max-w-3xl text-lg leading-8 text-slate-600">
+        <p className="mt-8 max-w-2xl text-base leading-8 text-slate-600">
           We'll handle all your Facebook ads, funnels,
           GoHighLevel, creatives, tracking, and follow-up
           systems.
